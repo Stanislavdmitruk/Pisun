@@ -1,22 +1,30 @@
-﻿var names = new List<string>(){"Stas","Oleg","Alina" };
+﻿var tries = 0;
 
-ShowNames(names);
-
-names.Add("Damian");
-
-ShowNames(names);
-
-void ShowNames(List<string> names1)
+while (tries <= 3)
 {
-    foreach (var name in names1)
+    Console.WriteLine("Name");
+
+    var name = Console.ReadLine();
+
+    Console.WriteLine("Password");
+
+    var password = Console.ReadLine();
+
+    if (name == "Stas" && password == "1313")
     {
-        if (name == "Alina")
+        Console.WriteLine("All OK");
+        break;
+    }
+    else
+    {
+        tries++;
+        if (tries <= 3)
         {
-            Console.WriteLine($"{name} nie pidor");
+            Console.WriteLine("Ebat ty debil"); 
         }
         else
         {
-            Console.WriteLine($"{name} pidor");
+            Console.WriteLine("Error");
         }
-    } 
+    }
 }
