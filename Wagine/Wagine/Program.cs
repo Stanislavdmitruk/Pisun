@@ -1,31 +1,5 @@
-﻿var tries = 0;
+﻿using Wagine;
 
-while (true)
-{
-    Console.WriteLine("Name");
-
-    var name = Console.ReadLine();
-
-    Console.WriteLine("Password");
-
-    var password = Console.ReadLine();
-
-    if (name == "Stas" && password == "1313")
-    {
-        Console.WriteLine("All OK");
-        break;
-    }
-    else
-    {
-        tries++;
-        if (tries <= 3)
-        {
-            Console.WriteLine("Ebat ty debil"); 
-        }
-        else
-        {
-            Console.WriteLine("nie nu ty i koncz");
-            break;
-        }
-    }
-}
+var trash = new Trash();
+trash.MaxTry = 4;
+trash.TryLogin(); 
