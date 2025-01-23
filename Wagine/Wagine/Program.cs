@@ -1,6 +1,6 @@
 ﻿var tries = 0;
 
-while (tries <= 3)
+while (true)
 {
     Console.WriteLine("Name");
 
@@ -24,7 +24,8 @@ while (tries <= 3)
         }
         else
         {
-            Console.WriteLine("Error");
+            Console.WriteLine("nie nu ty i koncz");
+            break;
         }
     }
 }
