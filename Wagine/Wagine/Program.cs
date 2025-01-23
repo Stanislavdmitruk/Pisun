@@ -1,5 +1,6 @@
-﻿using Wagine;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using Wagine;
 
-var trash = new Trash();
-trash.MaxTry = 4;
-trash.TryLogin(); 
+var an = new Cat();
+
+Console.WriteLine(an.Type);
